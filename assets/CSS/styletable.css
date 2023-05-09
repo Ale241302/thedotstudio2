@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 90px 20px 0;
+}
+
+p {
+	font-size: 30px;
+	margin-bottom: 30px;
+
+}
+
+.header {
+  background-color: #FFF;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  /*max-width: 1000px;
+  margin: 0 auto;*/
+}
+
+.nav-link {
+  color: #32AEB4;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 12px;
+  margin: 0 9px;
+  line-height: 100px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  /*background-color: red;
+  transition: 0.5s;*/
+    background: none;
+    color: #FF63F9;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: #32AEB4;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+.tablap{
+	margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+.table td,.table th{
+  padding:12px 11px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:12px;
+}
+
+.table th{
+	background-color: #32AEB4;
+	color:#ffffff;
+
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #FFF;
+}
+.boton{
+  text-decoration: none;
+  padding: 9px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  background-image: linear-gradient(to right, #F13774, #f89ab9, #F13774);
+  background-size: 200%;
+  text-transform: uppercase;
+  margin: 1px;
+  cursor: pointer;
+  transition: .5s;
+  display: block;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+.boton:hover{
+  background-position: right;
+}
+.boton2{
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  background-image: linear-gradient(to right, #32AEB4, #43c4ca, #32AEB4);
+  background-size: 200%;
+  text-transform: uppercase;
+  margin: 1px;
+  cursor: pointer;
+  transition: .5s;
+   display: block;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+.boton2:hover{
+  background-position: right;
+}
+
+#aa{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: .3s;
+}
+
+#aa:hover{
+  color: #FF63F9;
+}
+
+/*responsive*/
+
+@media(max-width: 768px){
+	body {
+    padding-top: 70px;
+  }
+  .header {
+    height: 101px;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #FFF;
+    position: fixed;
+    top: 101px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #FF63F9;
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  #ff{
+    font-size: 20px;
+  }
+
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+  #pupu{
+    padding-left: 0%;
+    text-align: center;
+  }
+ }
+
+
+
+
+
+
+
